@@ -19,20 +19,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="WK7-9D-6wN">
-                                <rect key="frame" x="147" y="288.5" width="81" height="90.5"/>
+                                <rect key="frame" x="131.5" y="253.5" width="112.5" height="160.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h8-Jl-DPL">
-                                        <rect key="frame" x="0.0" y="0.0" width="81" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brunch Master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h8-Jl-DPL">
+                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eln-dQ-OrK">
-                                        <rect key="frame" x="21.5" y="60.5" width="38" height="30"/>
+                                        <rect key="frame" x="37" y="60.5" width="38" height="30"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2d0-jt-eg1"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs7-ei-PeO">
+                                        <rect key="frame" x="32" y="130.5" width="48" height="30"/>
+                                        <state key="normal" title="Search"/>
                                     </button>
                                 </subviews>
                             </stackView>
