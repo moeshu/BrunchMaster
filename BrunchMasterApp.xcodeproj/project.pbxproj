@@ -15,6 +15,7 @@
 		44249242228F369600DEA759 /* BrunchMasterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44249241228F369600DEA759 /* BrunchMasterAppTests.swift */; };
 		4424924D228F369600DEA759 /* BrunchMasterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424924C228F369600DEA759 /* BrunchMasterAppUITests.swift */; };
 		4424925B228F3C8E00DEA759 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4424925A228F3C8E00DEA759 /* GoogleService-Info.plist */; };
+		4424925D228F55DC00DEA759 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4424925C228F55DC00DEA759 /* credentials.plist */; };
 		BB405A97841F760F3F91DB51 /* Pods_BrunchMasterAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C32CD6696D9931F77F791D /* Pods_BrunchMasterAppTests.framework */; };
 		E41AE854A6975D5AE5CED2AF /* Pods_BrunchMasterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB830CDAB17DD6913ACE9BC1 /* Pods_BrunchMasterApp.framework */; };
 		F9EE0CB8447A948185C08973 /* Pods_BrunchMasterAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E759517D6D4F2367A43C5 /* Pods_BrunchMasterAppUITests.framework */; };
@@ -52,6 +53,7 @@
 		4424924C228F369600DEA759 /* BrunchMasterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrunchMasterAppUITests.swift; sourceTree = "<group>"; };
 		4424924E228F369600DEA759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4424925A228F3C8E00DEA759 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4424925C228F55DC00DEA759 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		5165214E30D6EA1ACDC40343 /* Pods-BrunchMasterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrunchMasterApp.debug.xcconfig"; path = "Target Support Files/Pods-BrunchMasterApp/Pods-BrunchMasterApp.debug.xcconfig"; sourceTree = "<group>"; };
 		59D22659A024DECFEC93601C /* Pods-BrunchMasterAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrunchMasterAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BrunchMasterAppTests/Pods-BrunchMasterAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9458B245B447EC40D2F654B9 /* Pods-BrunchMasterAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrunchMasterAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrunchMasterAppUITests/Pods-BrunchMasterAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				4424925A228F3C8E00DEA759 /* GoogleService-Info.plist */,
+				4424925C228F55DC00DEA759 /* credentials.plist */,
 				4424922B228F369400DEA759 /* BrunchMasterApp */,
 				44249240228F369600DEA759 /* BrunchMasterAppTests */,
 				4424924B228F369600DEA759 /* BrunchMasterAppUITests */,
@@ -165,7 +168,6 @@
 				9458B245B447EC40D2F654B9 /* Pods-BrunchMasterAppUITests.debug.xcconfig */,
 				C1FF1F45BE3A89F7FFF5F370 /* Pods-BrunchMasterAppUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +282,7 @@
 			files = (
 				44249237228F369600DEA759 /* LaunchScreen.storyboard in Resources */,
 				4424925B228F3C8E00DEA759 /* GoogleService-Info.plist in Resources */,
+				4424925D228F55DC00DEA759 /* credentials.plist in Resources */,
 				44249234228F369600DEA759 /* Assets.xcassets in Resources */,
 				44249232228F369400DEA759 /* Main.storyboard in Resources */,
 			);
@@ -334,6 +337,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BrunchMasterApp/Pods-BrunchMasterApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -342,6 +346,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -382,12 +387,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BrunchMasterApp/Pods-BrunchMasterApp-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
