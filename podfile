@@ -21,4 +21,6 @@ target 'BrunchMasterApp' do
   
   pod 'Firebase/Core'
   pod 'FirebaseUI/Auth'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 end
