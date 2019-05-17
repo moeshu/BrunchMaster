@@ -32,6 +32,8 @@ PODS:
   - FirebaseUI/Auth (6.2.1):
     - Firebase/Auth (~> 5.0)
     - GoogleUtilities/UserDefaults
+  - FirebaseUI/Email (6.2.1):
+    - FirebaseUI/Auth
   - GoogleAppMeasurement (5.8.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
@@ -79,6 +81,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - FirebaseUI/Auth
+  - FirebaseUI/Email
   - GoogleSignIn
 
 SPEC REPOS:
@@ -112,6 +115,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: b20fc875a0600ff95ec076f35dea154eaa52e13b
+PODFILE CHECKSUM: 477633a8cd7d510354fede063d51ead132be4a3b
 
 COCOAPODS: 1.6.1
