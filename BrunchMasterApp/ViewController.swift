@@ -17,6 +17,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginTapped(_ sender: UIButton) {
+        // Get all auth UI object and specify defualt
+        // let providers: [FUIAuthProvider] = [
+            // FUIEmailAuth(authUI: FUIAuth.defaultAuthUI()),
+            // FUIGoogleAuth(),
+            // FUIFacebookAuth(),
+            // FUIPhoneAuth,
+            // ]
+        //self.authUI?.providers = providers
+        
+        
         // Get the defualt auth UI object
         let authUI = FUIAuth.defaultAuthUI()
         
@@ -27,7 +37,13 @@ class ViewController: UIViewController {
         }
         
         // Set ourselves as the delegate
+        
+        // This is deprecated and update
         authUI?.delegate = self
+        
+        // With this
+        authUI?.providers = [FUIEmailAuth()]
+        
         
         // Get a reference to the auth UI view controller
         let authViewController = authUI!.authViewController()
@@ -35,12 +51,15 @@ class ViewController: UIViewController {
         // Show it
         present(authViewController, animated: true, completion: nil)
         
+        
+        
     }
     
 }
 
 extension ViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+         // handle user (`authDataResult.user`) and error as necessary
         
         // Check if there was an error
         if error != nil {
