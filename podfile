@@ -19,9 +19,20 @@ target 'BrunchMasterApp' do
 
   # Custom Added Pods
   
+  # Firebase pods
   pod 'Firebase/Core'
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Auth'
   pod 'FirebaseUI/Email'
+
+  # Google SignIn 
   pod 'GoogleSignIn'
+
+  # Google maps view
+  # pod 'GooglePlaces'
+  # pod 'GooglePlacePicker'
+  # pod 'GoogleMaps'
+
+  # Custom Controllers
+  pod 'RAMAnimatedTabBarController'
 end

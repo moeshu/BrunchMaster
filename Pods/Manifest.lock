@@ -76,6 +76,7 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - RAMAnimatedTabBarController (5.0.0)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - FirebaseUI/Auth
   - FirebaseUI/Email
   - GoogleSignIn
+  - RAMAnimatedTabBarController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -99,6 +101,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - nanopb
+    - RAMAnimatedTabBarController
 
 SPEC CHECKSUMS:
   Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
@@ -114,7 +117,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  RAMAnimatedTabBarController: 6736db7bec2ec74d64059ee9cb40cb9bd281338e
 
-PODFILE CHECKSUM: 477633a8cd7d510354fede063d51ead132be4a3b
+PODFILE CHECKSUM: bb896484ca3c0f70422738d61bf4615b3999e022
 
 COCOAPODS: 1.6.1
