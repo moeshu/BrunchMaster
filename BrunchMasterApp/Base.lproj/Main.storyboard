@@ -144,9 +144,10 @@
                 <navigationController title="Settings" automaticallyAdjustsScrollViewInsets="NO" id="Nmq-ql-WQl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" title="Settings" image="settings-clear" id="17q-mS-ZGM" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vrZ-Kh-aSJ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="vrZ-Kh-aSJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -166,24 +167,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="3" id="dCY-Du-89X">
-                                <rect key="frame" x="0.0" y="28" width="375" height="3"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="r1c-Ti-a2w">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dCY-Du-89X" id="ueN-BG-fZn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="2.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="h4U-Vs-7Iv">
-                                <rect key="frame" x="0.0" y="31" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h4U-Vs-7Iv" id="hqb-a5-IrB">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r1c-Ti-a2w" id="Nvh-59-sQU">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" label="Linked accounts">
-                                    <accessibilityTraits key="traits" none="YES"/>
-                                </accessibility>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -191,7 +181,7 @@
                             <outlet property="delegate" destination="skq-bF-TtQ" id="YgF-8x-exv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Gcy-VB-NNr"/>
+                    <navigationItem key="navigationItem" title="Settings" id="Gcy-VB-NNr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNi-NU-PIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
