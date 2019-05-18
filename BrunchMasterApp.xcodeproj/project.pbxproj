@@ -16,6 +16,14 @@
 		4424924D228F369600DEA759 /* BrunchMasterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424924C228F369600DEA759 /* BrunchMasterAppUITests.swift */; };
 		4424925B228F3C8E00DEA759 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4424925A228F3C8E00DEA759 /* GoogleService-Info.plist */; };
 		4424925D228F55DC00DEA759 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4424925C228F55DC00DEA759 /* credentials.plist */; };
+		44BA3B9D2290663F00832E3E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA3B9C2290663F00832E3E /* SearchViewController.swift */; };
+		44BA3BA1229066FC00832E3E /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA3BA0229066FC00832E3E /* SearchResult.swift */; };
+		44BA3BA52290672100832E3E /* SearchLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA3BA42290672100832E3E /* SearchLogicController.swift */; };
+		44BA3BA72290672D00832E3E /* SearchResultsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA3BA62290672D00832E3E /* SearchResultsLoader.swift */; };
+		44BA3BA92290673B00832E3E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA3BA82290673B00832E3E /* SearchBar.swift */; };
+		44BA3BAB2290674700832E3E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA3BAA2290674700832E3E /* SearchTableViewCell.swift */; };
+		44BA3BAD2290675200832E3E /* SearchNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA3BAC2290675200832E3E /* SearchNetworkResponse.swift */; };
+		44BA3BAF2290676300832E3E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA3BAE2290676300832E3E /* SearchResultsViewController.swift */; };
 		BB405A97841F760F3F91DB51 /* Pods_BrunchMasterAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C32CD6696D9931F77F791D /* Pods_BrunchMasterAppTests.framework */; };
 		E41AE854A6975D5AE5CED2AF /* Pods_BrunchMasterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB830CDAB17DD6913ACE9BC1 /* Pods_BrunchMasterApp.framework */; };
 		F9EE0CB8447A948185C08973 /* Pods_BrunchMasterAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E759517D6D4F2367A43C5 /* Pods_BrunchMasterAppUITests.framework */; };
@@ -54,6 +62,14 @@
 		4424924E228F369600DEA759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4424925A228F3C8E00DEA759 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4424925C228F55DC00DEA759 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		44BA3B9C2290663F00832E3E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		44BA3BA0229066FC00832E3E /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		44BA3BA42290672100832E3E /* SearchLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLogicController.swift; sourceTree = "<group>"; };
+		44BA3BA62290672D00832E3E /* SearchResultsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsLoader.swift; sourceTree = "<group>"; };
+		44BA3BA82290673B00832E3E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		44BA3BAA2290674700832E3E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		44BA3BAC2290675200832E3E /* SearchNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkResponse.swift; sourceTree = "<group>"; };
+		44BA3BAE2290676300832E3E /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		5165214E30D6EA1ACDC40343 /* Pods-BrunchMasterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrunchMasterApp.debug.xcconfig"; path = "Target Support Files/Pods-BrunchMasterApp/Pods-BrunchMasterApp.debug.xcconfig"; sourceTree = "<group>"; };
 		59D22659A024DECFEC93601C /* Pods-BrunchMasterAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrunchMasterAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BrunchMasterAppTests/Pods-BrunchMasterAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9458B245B447EC40D2F654B9 /* Pods-BrunchMasterAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrunchMasterAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-BrunchMasterAppUITests/Pods-BrunchMasterAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +136,7 @@
 		4424922B228F369400DEA759 /* BrunchMasterApp */ = {
 			isa = PBXGroup;
 			children = (
+				44BA3B932290657900832E3E /* Features */,
 				4424922C228F369400DEA759 /* AppDelegate.swift */,
 				4424922E228F369400DEA759 /* ViewController.swift */,
 				44249230228F369400DEA759 /* Main.storyboard */,
@@ -146,6 +163,61 @@
 				4424924E228F369600DEA759 /* Info.plist */,
 			);
 			path = BrunchMasterAppUITests;
+			sourceTree = "<group>";
+		};
+		44BA3B932290657900832E3E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				44BA3B94229065A100832E3E /* Search */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		44BA3B94229065A100832E3E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				44BA3B95229065AD00832E3E /* ViewControllers */,
+				44BA3B97229065CE00832E3E /* Models */,
+				44BA3B9A2290660200832E3E /* Logic */,
+				44BA3B9B2290660A00832E3E /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		44BA3B95229065AD00832E3E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				44BA3B9C2290663F00832E3E /* SearchViewController.swift */,
+				44BA3BAE2290676300832E3E /* SearchResultsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		44BA3B97229065CE00832E3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44BA3BA0229066FC00832E3E /* SearchResult.swift */,
+				44BA3BAC2290675200832E3E /* SearchNetworkResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44BA3B9A2290660200832E3E /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				44BA3BA42290672100832E3E /* SearchLogicController.swift */,
+				44BA3BA62290672D00832E3E /* SearchResultsLoader.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		44BA3B9B2290660A00832E3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44BA3BA82290673B00832E3E /* SearchBar.swift */,
+				44BA3BAA2290674700832E3E /* SearchTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		668CEF9E7CDDB369790DB31C /* Frameworks */ = {
@@ -434,8 +506,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BA3BA92290673B00832E3E /* SearchBar.swift in Sources */,
+				44BA3B9D2290663F00832E3E /* SearchViewController.swift in Sources */,
 				4424922F228F369400DEA759 /* ViewController.swift in Sources */,
+				44BA3BA52290672100832E3E /* SearchLogicController.swift in Sources */,
+				44BA3BA1229066FC00832E3E /* SearchResult.swift in Sources */,
+				44BA3BAB2290674700832E3E /* SearchTableViewCell.swift in Sources */,
 				4424922D228F369400DEA759 /* AppDelegate.swift in Sources */,
+				44BA3BA72290672D00832E3E /* SearchResultsLoader.swift in Sources */,
+				44BA3BAD2290675200832E3E /* SearchNetworkResponse.swift in Sources */,
+				44BA3BAF2290676300832E3E /* SearchResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
