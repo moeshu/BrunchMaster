@@ -70,7 +70,7 @@ extension ViewController: FUIAuthDelegate {
         // authDateResult.user.uid
         // This allows you to check database side to decide where to send them next. i.g. setup wizard, or account
         
-        performSegue(withIdentifier: "goHome", sender: self)
+        performSegue(withIdentifier: "goSettings", sender: self)
     }
     
 
